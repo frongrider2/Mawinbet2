@@ -469,7 +469,18 @@ body{
 
 /* End of Main Menu */
 
-
+/* tablet width */
+@media screen and (max-width: 1366px) {
+  .Second-nav{
+    padding: 0 1rem;
+  }
+  .money-section{
+    padding: 0 4rem;
+  }
+  .All-Main-Menu{
+    margin: 2rem 1.5rem;
+  }
+}
 
 /* tablet */
 @media screen and (max-width: 1024px) {
