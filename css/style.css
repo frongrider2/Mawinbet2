@@ -1,0 +1,496 @@
+/* defalt setting */
+/* @font-face{
+  font-family: "My-first";
+  src:url("B:\Frontend\ที่เก็บถาวร\mawin\font\SukhumvitSet-Text.ttf");
+} */
+
+body{
+  background-color: #161A26;
+}
+
+*{
+  font-family: 'Kanit', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  list-style: none;
+  text-align: center;
+}
+
+/* PC */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* iphone เเนวนอน */
+@media screen and (max-width: 767px)
+{
+  html {
+    font-size: 100%;
+  }
+
+}
+
+/* iphone */
+@media screen and (max-width: 479px)
+{
+  html {
+    font-size: 130%;
+  }
+
+}
+
+/* end of defalt setting */
+
+/* top navbar */
+
+.top-navbar{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* end of top navbar */
+.First-nav-content{
+  display: flex;
+  flex-direction: row;
+}
+
+.Second-nav{
+  background-color: #282F44;
+  padding: 0 30rem
+}
+
+.First-nav{
+  padding: 0.5rem 0;
+}
+
+.First-nav div{
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.First-nav h3{
+  margin-left: 1rem;
+}
+
+.First-nav span{
+  color: #FAD131;
+}
+
+.Logo-img{
+  width: 3rem;
+}
+
+/* Second navbar */
+.Second-nav{
+  display: flex;
+}
+
+.Second-nav-user{
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.Second-nav-user div{
+  margin-left: 1rem;
+}
+
+.Second-nav-user h1{
+  font-size: 1.4rem;
+  color: #AFAFAF
+}
+
+
+.Second-nav-user h2{
+  font-size: 1.4rem;
+  color: #FFFF;
+
+}
+
+.user-icon{
+  font-size: 3rem;
+  color: #20115B;
+  background-color: #ffff;
+  border-radius: 50%;
+  padding: 0.1rem;
+}
+
+.Second-nav-button{
+  display: flex;
+  margin-left: auto;
+}
+
+.Second-nav-button-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.Second-nav-button-list h2{
+  font-size: 1.2rem;
+  color: #FFFF;
+}
+
+
+.Second-nav-button-list img{
+  width: 3.5rem;
+  margin: 0.1rem;
+}
+
+/* End of Second navbar */
+
+/* Money section */
+
+.money-section{
+  margin-top: 1rem;
+  padding: 0 30rem;
+}
+
+.money-section-circle{
+  color: #FFFF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.money-circle{
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  background-color: #282F44;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.money-circle h1{
+  font-size: 1.8rem;
+}
+
+.money-circle h2{
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
+
+
+.cash-btn{
+  display: grid;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.cash-btn div{
+  margin: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+.money-btn-deposit{
+  background-color: #32D74B;
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+}
+
+.money-btn-deposit i{
+  margin-left: auto;
+}
+
+.money-btn-withdraw{
+  background-color: #FF2D55;
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+}
+
+.money-btn-withdraw i{
+  margin-left: auto;
+}
+
+
+/* End of Money section */
+
+/* Main Menu */
+.All-Main-Menu{
+  background-color: #282F44;
+  margin: 2rem 20rem;
+  border-radius: 3rem;
+}
+  /* Importance Menu  */
+
+.Importance-Menu{
+  padding: 1rem 1rem;
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr 1fr 1fr min-content;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+}
+
+.Importance-Menu li{
+  padding: 2rem; 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #161A26;
+  border-radius: 1.5rem;
+}
+
+.huay-menu{
+  background-image: url(../img/Hot-menu.svg);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  grid-row: 1 / -1;
+  grid-column: 2 / 3;
+}
+
+.casino-menu{
+  grid-row: 1 / -1;
+  grid-column: 3 / 4;
+}
+
+.game-menu{
+  grid-row: 1 / -1;
+  grid-column: 4 / 5;
+}
+
+.ball-menu{
+  grid-row: 1 / -1;
+  grid-column: 5 / 6;
+}
+
+.Importance-Menu h2{
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+
+.icon-huay{
+  background-image: url(../img/Huaymenu.svg);
+
+}
+
+.icon-casino{
+  background-image: url(../img/casinomenu.svg);
+}
+
+.icon-game{
+  background-image: url(../img/gamemenu.svg);
+}
+
+.icon-ball{
+  background-image: url(../img/ballmenu.svg);
+}
+
+
+.icon{
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  background-size: 6rem 6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+  /* End of Importance Menu  */
+
+  /* All Menu */
+
+.icon-list{
+  background-image: url(../img/icon-list.svg);
+}
+.icon-reward{
+  background-image: url(../img/icon-reward.svg);
+}
+.icon-number{
+  background-image: url(../img/icon-number.svg);
+}
+.icon-friends{
+  background-image: url(../img/icon-friends.svg);
+}
+.icon-credit{
+  background-image: url(../img/icon-credit.svg);
+}
+.icon-money{
+  background-image: url(../img/icon-money.svg);
+}
+.icon-news{
+  background-image: url(../img/icon-news.svg);
+}
+.icon-rate{
+  background-image: url(../img/icon-rate.svg);
+}
+.icon-movie{
+  background-image: url(../img/icon-movie.svg);
+}
+.icon-ballonline{
+  background-image: url(../img/icon-ballonline.svg);
+}
+
+.all-Menu h2{
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+
+.all-Menu{
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: min-content repeat(8,1fr) min-content;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+}
+
+.all-Menu li{
+  padding: 2rem; 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #161A26;
+  border-radius: 1.5rem;
+}
+
+  /* End of All Menu */
+
+/* footer */
+
+.footer{
+  background-color: #282F44;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-contain{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer-contain li{
+  flex-grow: 1;
+  margin: 0 10px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-footer{
+  display:inline-block;
+  width: 6rem;
+  height: 6rem;
+  background-size: 4rem 4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-footer-home{
+  background-image: url(../img/footer-home.svg);
+}
+.icon-footer-huay{
+  background-image: url(../img/footer-huay.svg);
+}
+.icon-footer-yigi{
+  background-image: url(../img/footer-yigi.svg);
+}
+.icon-footer-mawin{
+  width: 15rem;
+  height: 15rem;
+  background-color: #282F44;
+  background-size: 6rem 6rem;
+  background-image: url(../img/footer-mawin.svg);
+  background-position: 50% 20%;
+  border-radius: 50%;
+}
+.footer-mawin{
+  position: relative;
+}
+.footer-mawin span{
+  position: absolute;
+  top: -3rem;
+}
+.footer-mawin h1{
+  position: absolute;
+  top: 5rem;
+}
+
+.icon-footer-casino{
+  background-image: url(../img/footer-casino.svg);
+}
+.icon-footer-game{
+  background-image: url(../img/footer-game.svg);
+}
+.icon-footer-ball{
+  background-image: url(../img/footer-ball.svg);
+}
+
+.footer h2{
+  color: #FAD131;
+  font-size: 1.6rem;
+}
+
+.footer h1{
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+/* end of footer */
+
+
+
+
+/* End of Main Menu */
+
+
+/* Responsive */
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .Second-nav{
+    background-color: #282F44;
+    padding: 0 1rem;
+  }
+  .money-section{
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+  .All-Main-Menu{
+    background-color: #282F44;
+    margin: 2rem 2rem;
+    border-radius: 3rem;
+  }
+}
+
+/* iphone เเนวนอน */
+@media screen and (max-width: 767px)
+{
+
+}
+
+/* iphone */
+@media screen and (max-width: 479px)
+{
+
+
+}
+/* Responsive */
