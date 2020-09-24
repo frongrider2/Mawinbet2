@@ -67,6 +67,7 @@ body{
 .First-nav-content{
   display: flex;
   flex-direction: row;
+  background-color: #161A26;
 }
 
 .Second-nav{
