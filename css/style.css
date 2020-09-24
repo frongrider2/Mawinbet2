@@ -470,7 +470,7 @@ body{
 
 /* Responsive */
 /* tablet */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .Second-nav{
     padding: 0 1rem;
   }
@@ -493,5 +493,5 @@ body{
 {
 
 
-}
+} */
 /* Responsive */
