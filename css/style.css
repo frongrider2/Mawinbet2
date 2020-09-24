@@ -56,6 +56,10 @@ body{
 .top-navbar{
   display: flex;
   flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 
@@ -158,7 +162,7 @@ body{
 /* Money section */
 
 .money-section{
-  margin-top: 1rem;
+  margin-top: 10rem;
   padding: 0 30rem;
 }
 
@@ -467,17 +471,7 @@ body{
 /* tablet */
 @media screen and (max-width: 1024px) {
   .Second-nav{
-    background-color: #282F44;
     padding: 0 1rem;
-  }
-  .money-section{
-    margin-top: 1rem;
-    padding: 0 1rem;
-  }
-  .All-Main-Menu{
-    background-color: #282F44;
-    margin: 2rem 2rem;
-    border-radius: 3rem;
   }
 }
 
