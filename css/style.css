@@ -37,14 +37,13 @@ body{
   html {
     font-size: 100%;
   }
-
 } */
 
 /* iphone */
 @media screen and (max-width: 479px)
 {
   html {
-    font-size: 40%;
+    font-size: 30%;
   }
 
 }
@@ -366,15 +365,24 @@ body{
 .all-Menu{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-gap: 1rem;
   margin: 0 1rem;
 }
 
 .all-Menu div{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
+.all-Menu div:last-child{
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
 
 .all-Menu li{
   margin: 1rem 0;
@@ -400,7 +408,6 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 1rem;
 }
 
 .footer-contain{
@@ -497,6 +504,18 @@ body{
   font-size: 2rem;
 }
 
+.circle_footer{
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  flex-wrap: wrap;
+}
+.circle_footer span{
+  width: 5rem;
+  height: 5rem;
+  background-color: #282F44;
+}
+
 /* end of footer */
 
 
@@ -506,6 +525,13 @@ body{
 
 /* tablet width */
 @media screen and (max-width: 1366px) {
+  .all-Menu div:last-child{
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
   .All-Main-Menu{
     padding: 2rem;
   }
@@ -538,7 +564,7 @@ body{
 }
 
 /* iphone เเนวนอน */
-@media screen and (max-width: 767px){
+@media screen and (max-width: 780px){
   .Second-nav{
     background-color: #282F44;
     padding: 0 1rem
