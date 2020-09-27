@@ -41,13 +41,13 @@ body{
 } */
 
 /* iphone */
-/* @media screen and (max-width: 479px)
+@media screen and (max-width: 479px)
 {
   html {
-    font-size: 130%;
+    font-size: 40%;
   }
 
-} */
+}
 
 /* end of defalt setting */
 
@@ -397,6 +397,10 @@ body{
   left: 0;
   bottom: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 
 .footer-contain{
@@ -437,6 +441,11 @@ body{
   background-repeat: no-repeat;
 }
 
+.footer-yigi{
+  position: relative;
+  z-index: 1;
+}
+
 .icon-footer-home{
   background-image: url(../img/footer-home.svg);
 }
@@ -446,25 +455,26 @@ body{
 .icon-footer-yigi{
   background-image: url(../img/footer-yigi.svg);
 }
-.icon-footer-mawin{
-  width: 15rem;
-  height: 15rem;
-  background-color: #282F44;
-  background-size: 6rem 6rem;
-  background-image: url(../img/footer-mawin.svg);
-  background-position: 50% 20%;
-  border-radius: 50%;
-}
+
 .footer-mawin{
   position: relative;
 }
-.footer-mawin span{
+
+.icon-footer-mawin{
+  width: 15rem;
+  height: 15rem;
+  background-size: 6rem 6rem;
+  background-color: #282F44;
+  background-image: url(../img/footer-mawin.svg);
+  background-position: 50% 20%;
   position: absolute;
-  top: -3rem;
+  top: -5rem;
+  border-radius: 50%;
+  z-index: 0;
 }
 .footer-mawin h1{
   position: absolute;
-  top: 5rem;
+  top: 3rem;
 }
 
 .icon-footer-casino{
@@ -496,7 +506,30 @@ body{
 
 /* tablet width */
 @media screen and (max-width: 1366px) {
-
+  .All-Main-Menu{
+    padding: 2rem;
+  }
+  .Second-nav{
+    background-color: #282F44;
+    padding: 0 5rem;
+  }
+  .Importance-Menu{
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .all-Menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0 1rem;
+  }
+  .footer-contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0 5rem;
+  }
 }
 
 /* tablet */
@@ -505,15 +538,42 @@ body{
 }
 
 /* iphone เเนวนอน */
-@media screen and (max-width: 767px)
-{
-
+@media screen and (max-width: 767px){
+  .Second-nav{
+    background-color: #282F44;
+    padding: 0 1rem
+  }
+  .money-section{
+    margin-top: 10rem;
+    padding: 0 10rem;
+  }
+  .footer-contain{
+    padding: 0 1rem;
+  }
 }
 
 /* iphone */
-@media screen and (max-width: 479px)
-{
+@media screen and (max-width: 479px){
+  .money-section{
+    margin-top: 10rem;
+    padding: 0 1rem;
+  }
+  .footer-contain{
+    display: grid;
+    padding: 0 0rem;
+  }
+  .footer h2{
+    color: #FAD131;
+    font-size: 1.2rem;
+  }
 
-
-} */
+  .footer h1{
+    color: #FFFFFF;
+    font-size: 1.4rem;
+  }
+  .All-Main-Menu{
+    margin: 0 1rem;
+    margin-bottom: 15rem;
+  }
+}
 /* Responsive */
