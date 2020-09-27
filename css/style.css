@@ -27,27 +27,27 @@ body{
 /* tablet */
 @media screen and (max-width: 1024px) {
   html {
-    font-size:  62.5%;
+    font-size:  50%;
   }
 }
 
 /* iphone เเนวนอน */
-@media screen and (max-width: 767px)
+/* @media screen and (max-width: 767px)
 {
   html {
     font-size: 100%;
   }
 
-}
+} */
 
 /* iphone */
-@media screen and (max-width: 479px)
+/* @media screen and (max-width: 479px)
 {
   html {
     font-size: 130%;
   }
 
-}
+} */
 
 /* end of defalt setting */
 
@@ -239,22 +239,32 @@ body{
 
 /* Main Menu */
 .All-Main-Menu{
+  margin-bottom: 20rem;
   background-color: #282F44;
-  margin: 2rem 20rem;
   border-radius: 3rem;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
   /* Importance Menu  */
 
 .Importance-Menu{
   padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.Importance-Menu div{
+  flex-grow: 1;
+  margin: 0 1rem;
   display: grid;
-  grid-template-columns: min-content 1fr 1fr 1fr 1fr min-content;
-  grid-template-rows: 1fr;
-  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 .Importance-Menu li{
-  padding: 2rem; 0;
+  margin: 1rem 0;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -267,23 +277,18 @@ body{
   background-image: url(../img/Hot-menu.svg);
   background-size: 30%;
   background-repeat: no-repeat;
-  grid-row: 1 / -1;
-  grid-column: 2 / 3;
 }
 
 .casino-menu{
-  grid-row: 1 / -1;
-  grid-column: 3 / 4;
+
 }
 
 .game-menu{
-  grid-row: 1 / -1;
-  grid-column: 4 / 5;
+
 }
 
 .ball-menu{
-  grid-row: 1 / -1;
-  grid-column: 5 / 6;
+
 }
 
 .Importance-Menu h2{
@@ -359,15 +364,21 @@ body{
 }
 
 .all-Menu{
-  padding: 3rem 2rem;
   display: grid;
-  grid-template-columns: min-content repeat(8,1fr) min-content;
-  grid-template-rows: 1fr;
-  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 0 1rem;
+}
+
+.all-Menu div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 .all-Menu li{
-  padding: 2rem; 0;
+  margin: 1rem 0;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -389,18 +400,32 @@ body{
 }
 
 .footer-contain{
-  display: flex;
-  flex-wrap: wrap;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 0 10rem;
 }
 
 .footer-contain li{
   flex-grow: 1;
-  margin: 0 10px;
-  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.footer-contain li::after{
+  content: "";
+  width: 0.1rem;
+  height: 80%;
+  background-color: #FAD131;
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+
+.footer-contain li:last-child::after{
+  content: "";
+  width: 0;
 }
 
 .icon-footer{
@@ -479,6 +504,13 @@ body{
   }
   .All-Main-Menu{
     margin: 2rem 1.5rem;
+    margin-bottom: 15rem;
+  }
+  .all-Menu{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
   }
 }
 
