@@ -488,10 +488,6 @@ html {
 
 /* End of Main Menu */
 
-/* tablet width */
-@media screen and (max-width: 1366px) {
-}
-
 /* tablet */
 @media screen and (max-width: 1312px) {
   .Importance-Menu{
@@ -507,6 +503,12 @@ html {
     padding: 0 10rem;
   }
   .All-Main-Menu{
+  }
+  .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 /* iphone เเนวนอน */
