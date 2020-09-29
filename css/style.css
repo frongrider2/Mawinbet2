@@ -551,6 +551,11 @@ html {
     margin-top: 10rem;
     padding: 0 2rem;
   }
+  .All-Main-Menu{
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 /* Responsive */
 @media screen and (max-width: 321px){
@@ -558,8 +563,8 @@ html {
     font-size: 35%;
   }
   .All-Main-Menu{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
 }
