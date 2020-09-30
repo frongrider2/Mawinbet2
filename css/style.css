@@ -486,6 +486,114 @@ html {
 
 /* End of Main Menu */
 
+/* Casino section  */
+.casino-section{
+  margin: 0 25rem;
+  margin-top: 10rem;
+  margin-bottom: 30rem;
+}
+.casino-section h1{
+  font-size: 1.8rem;
+  color: #FF9F00;
+}
+.casino-list-contain{
+  margin-top: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.casino-list{
+  grid-column: 2 / 3;
+  background-color: #282F44;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.casino-list li{
+  display: flex;
+  flex-direction: column;
+}
+
+.casino-list li:first-child{
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+}
+
+.casino-list img{
+  width: 100%;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+#popularcasino-img{
+  margin-bottom: 0rem;
+}
+
+.casino-list h1{
+  color: #FFFFFF;
+}
+
+.casino-list h2{
+  color: #FFFFFF;
+}
+
+.btn-casino-play-popular{
+  background-color: #E8BD70;
+  padding: 0.8rem 4rem;
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  border-radius: 1.5rem;
+}
+
+.btn-casino-play{
+  background-color: #FFFFFF;
+  padding: 0.5rem 3rem;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  border-radius: 1.5rem;
+}
+
+.casino-popular-name{
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161A26;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.casino-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  background-color: #161A26;
+  padding: 0.5rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+
+/* End of Casino section  */
+
+
+
+
+
+
+
+/* Responsive */
+
 /* tablet */
 @media screen and (max-width: 1312px) {
   .Importance-Menu{
@@ -530,6 +638,7 @@ html {
 }
 
 
+
 @media screen and (max-width: 750px){
   html {
     font-size: 50%;
@@ -543,6 +652,7 @@ html {
     background-position: center;
   }
 }
+
 /* iphone */
 @media screen and (max-width: 479px){
   html {
@@ -587,7 +697,7 @@ html {
     top: 3rem;
   }
 }
-/* Responsive */
+/* iphone 5 */
 @media screen and (max-width: 321px){
   html {
     font-size: 35%;
@@ -598,53 +708,3 @@ html {
   }
 
 }
-
-
-
-
-
-
-/* tablet */
-/* @media screen and (max-width: 1312px) {
-
-} */
-
-/* iphone เเนวนอน */
-/* @media screen and (max-width: 992px){
-  .Second-nav{
-    background-color: #282F44;
-    padding: 0 1rem
-  }
-  .money-section{
-    margin-top: 10rem;
-    padding: 0 10rem;
-  }
-  .footer-contain{
-    padding: 0 1rem;
-  }
-} */
-
-/* iphone */
-/* @media screen and (max-width: 479px){
-  .money-section{
-    margin-top: 10rem;
-    padding: 0 1rem;
-  }
-  .footer-contain{
-    display: grid;
-    padding: 0 0rem;
-  }
-  .footer h2{
-    color: #FAD131;
-    font-size: 1.2rem;
-  }
-
-  .footer h1{
-    color: #FFFFFF;
-    font-size: 1.4rem;
-  }
-  .All-Main-Menu{
-    margin: 0 1rem;
-    margin-bottom: 15rem;
-  }
-}  */
