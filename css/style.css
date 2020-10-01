@@ -32,6 +32,7 @@ html {
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 
 
@@ -373,6 +374,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 0;
+  z-index: 10;
 }
 
 .footer-contain{
@@ -488,7 +490,6 @@ html {
 
 /* Casino section  */
 .casino-section{
-  margin: 0 25rem;
   margin-top: 10rem;
   margin-bottom: 30rem;
 }
@@ -500,7 +501,9 @@ html {
   margin-top: 1rem;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 60rem 1fr;
+  position: relative;
+  z-index: 1;
 }
 
 .casino-list{
@@ -516,6 +519,7 @@ html {
 .casino-list li{
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .casino-list li:first-child{
@@ -525,12 +529,14 @@ html {
 
 .casino-list img{
   width: 100%;
-  border-radius: 2rem;
-  margin-bottom: 2rem;
+  border-radius: 2rem 2rem 2rem 2rem;
+  margin-bottom: 6rem;
+  margin-top: 1rem;
 }
 
 #popularcasino-img{
   margin-bottom: 0rem;
+  margin-top: 0rem;
 }
 
 .casino-list h1{
@@ -552,13 +558,14 @@ html {
 
 .btn-casino-play{
   background-color: #FFFFFF;
+  margin: 0.5rem 0;
   padding: 0.5rem 3rem;
   font-size: 1.4rem;
   font-weight: bolder;
   border-radius: 1.5rem;
 }
 
-.casino-popular-name{
+.casino-popular-info{
   width: 100%;
   padding: 0 1rem;
   box-sizing: border-box;
@@ -569,18 +576,47 @@ html {
   align-items: center;
   background-color: #161A26;
   border-radius: 0 0 2rem 2rem;
+  bottom: 0;
+  left: 0;
 }
 
-.casino-name{
+.casino-info{
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  bottom: 0;
+  bottom: 0rem;
   left: 0;
   background-color: #161A26;
   padding: 0.5rem;
   border-radius: 0 0 2rem 2rem;
+}
+
+.popular-btn{
+  position: absolute;
+  top: -1.5rem;
+  left: 2rem;
+  width: 10rem;
+  height: 3rem;
+  background-size: 10rem 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/casino/popular.svg);
+}
+
+.online-btn{
+  position: absolute;
+  top: -0.5rem;
+  right: 1.5rem;
+  width: 8rem;
+  height: 3rem;
+  background-size: 8rem 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/casino/on.svg);
 }
 
 
@@ -636,9 +672,6 @@ html {
     grid-row: 3 / 4;
   }
 }
-
-
-
 @media screen and (max-width: 750px){
   html {
     font-size: 50%;
@@ -651,13 +684,12 @@ html {
     background-repeat: no-repeat;
     background-position: center;
   }
+  .casino-list-contain{
+    grid-template-columns: 0.5fr 4.5fr 0.5fr;
+  }
 }
-
 /* iphone */
 @media screen and (max-width: 479px){
-  html {
-    font-size: 50%;
-  }
   .money-section{
     margin-top: 10rem;
     padding: 0 2rem;
@@ -695,6 +727,12 @@ html {
   .footer-mawin h1{
     position: absolute;
     top: 3rem;
+  }
+  .casino-list-contain{
+    grid-template-columns: 0.1fr 2fr 0.1fr;
+  }
+  .casino-list{
+    grid-template-columns: 1fr 1fr;
   }
 }
 /* iphone 5 */
