@@ -780,14 +780,13 @@ html {
 }
 .ball-section h1{
   font-size: 1.8rem;
-  color: #ffffff;
-}
-.ball-section h2{
-  font-size: 1.8rem;
   color: #FF9F00;
 }
+.ball-info h1{
+  font-size: 1.8rem;
+  color: #ffffff;
+}
 .ball-list-contain{
-  padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 60rem 1fr;
 }
@@ -798,6 +797,7 @@ html {
   background-color: #282F44;
   border-radius: 2rem;
   padding: 2rem;
+  padding-top: 3rem;
 }
 .ball-list li{
   display: flex;
