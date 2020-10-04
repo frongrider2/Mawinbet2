@@ -578,6 +578,7 @@ html {
   border-radius: 0 0 2rem 2rem;
   bottom: 0;
   left: 0;
+  box-shadow: 0px -10px 15px 5px rgba(22, 26, 38, 0.81);
 }
 
 .casino-info{
@@ -771,7 +772,100 @@ html {
 }
 /* End of Game Section */
 
+/* Ball section */
+.ball-section{
+  margin-top: 10rem;
+  margin-bottom: 30rem;
+  z-index: 1;
+}
+.ball-section h1{
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.ball-section h2{
+  font-size: 1.8rem;
+  color: #FF9F00;
+}
+.ball-list-contain{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 60rem 1fr;
+}
+.ball-list{
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  background-color: #282F44;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.ball-list li{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 3rem;
+}
 
+.ball-list li:last-child{
+  margin-bottom: 0;
+}
+
+.ball-info{
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0rem;
+  left: 0;
+  background-color: #161A26;
+  border-radius: 0 0 2rem 2rem;
+  padding: 1rem 2rem;
+  box-shadow: 0px -10px 15px 5px rgba(22, 26, 38, 0.81);
+}
+
+
+.ball-list img{
+  width: 100%;
+  border-radius: 2rem;
+}
+.btn-ball-play{
+  background-color: #E8BD70;
+  padding: 0.8rem 4rem;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  border-radius: 1.5rem;
+}
+
+.ball-btn{
+  position: absolute;
+}
+
+.popular-ball-btn{
+  position: absolute;
+  left: 1rem;
+  top: -1.5rem;
+  width: 10rem;
+  height: 3rem;
+  background-size: 10rem 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/ball/pop.svg);
+}
+.online-ball-btn{
+  position: absolute;
+  left: 11rem;
+  top: -1.5rem;
+  width: 10rem;
+  height: 3rem;
+  background-size: 10rem 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/ball/on.svg);
+}
+/* End of section */
 
 
 
@@ -824,6 +918,9 @@ html {
   .game-contain{
     grid-template-columns: 1fr 70rem 1fr;
   }
+  .ball-list-contain{
+    grid-template-columns: 1fr 70rem 1fr;
+  }
 }
 
 @media screen and (max-width: 750px){
@@ -842,7 +939,10 @@ html {
     grid-template-columns: 0.5fr 4.5fr 0.5fr;
   }
   .game-contain{
-    grid-template-columns: 1fr 60rem 1fr;
+    grid-template-columns: 0.5fr 4.5fr 0.5fr;
+  }
+  .ball-list-contain{
+    grid-template-columns: 0.5fr 4.5fr 0.5fr;
   }
 }
 /* iphone */
@@ -892,7 +992,7 @@ html {
     grid-template-columns: 1fr 1fr;
   }
   .game-contain{
-    grid-template-columns: 1fr 45rem 1fr;
+    grid-template-columns: 0.1fr 2fr 0.1fr;
   }
   .game-list{
     grid-template-columns: 1fr 1fr;
@@ -900,6 +1000,9 @@ html {
   }
   .populargame-img{
     height: 20rem;
+  }
+  .ball-list-contain{
+    grid-template-columns: 0.1fr 2fr 0.1fr;
   }
 }
 /* iphone 5 */
