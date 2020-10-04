@@ -821,7 +821,11 @@ html {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
   }
+  .game-contain{
+    grid-template-columns: 1fr 70rem 1fr;
+  }
 }
+
 @media screen and (max-width: 750px){
   html {
     font-size: 50%;
@@ -836,6 +840,9 @@ html {
   }
   .casino-list-contain{
     grid-template-columns: 0.5fr 4.5fr 0.5fr;
+  }
+  .game-contain{
+    grid-template-columns: 1fr 60rem 1fr;
   }
 }
 /* iphone */
@@ -883,6 +890,16 @@ html {
   }
   .casino-list{
     grid-template-columns: 1fr 1fr;
+  }
+  .game-contain{
+    grid-template-columns: 1fr 45rem 1fr;
+  }
+  .game-list{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+  .populargame-img{
+    height: 20rem;
   }
 }
 /* iphone 5 */
